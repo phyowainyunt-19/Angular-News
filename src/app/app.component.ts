@@ -43,6 +43,7 @@ export class AppComponent implements AfterViewInit  {
     })
     this.cd.detectChanges();
   }
+  // for header of each new source
   searchSource(source:any){
     this.newsApi.getArticlesByID(source.id)
     .subscribe((res:any)=>{

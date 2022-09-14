@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import API_KEY from './API'
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
 
-  api_key = 'your api key';
+  api_key = API_KEY;
   constructor(private http: HttpClient) { }
-
+ 
 
   initSources() {
     return this.http.get('https://newsapi.org/v2/sources?language=en&apiKey=' + this.api_key);
