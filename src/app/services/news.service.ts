@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import API_KEY from './API'
+import API_KEY from '../../API'
 
 @Injectable({
   providedIn: 'root'
